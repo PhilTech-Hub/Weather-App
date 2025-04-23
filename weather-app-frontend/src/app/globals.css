@@ -1,0 +1,148 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.overall{
+  border: 2px solid gray;
+  width: 80%;
+  height: 712px;
+
+}
+
+.left {
+  position: relative;
+  top: -27%;
+  left: -5%;
+  padding: 20px;
+  width: 25%;
+  border-right: 2px solid gray;
+  height: 710px;
+}
+
+.weather-img-l{
+  position: relative;
+  top: -20%;
+  left: -70%;
+  width: 200px;
+  height: 200px;
+}
+
+.tem{
+  position: relative;
+  top: -8%;
+  left: -160%;
+  color: rgb(25, 60, 216);
+}
+
+.desc-l{
+  position: relative;
+  top: -1%;
+  left: -230%;
+  color: rgb(207, 102, 32);
+}
+
+.date-l{
+  position: relative;
+  top: 27%;
+  left: -20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.location{
+  position: relative;
+  top: 28%;
+  left: -20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.right {
+  position: relative;
+  left: 95%;
+  padding: 30px;
+}
+
+.search {
+  position: relative;
+  top: 20px;
+  left: 40%;
+}
+
+
+.c-f {
+  position: relative;
+  top: -99px;
+  left: 70%;
+}
+
+.n3d {
+  position: relative;
+  top: -90%;
+  left: 65%;
+  display: flex;
+  gap: 20px;
+}
+
+.n3d h3{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(75, 98, 199);
+}
+
+.n3d-grid{
+  position: relative;
+  left: -15%;
+  top: 15%;
+}
+
+.n3d-grid-child{
+  border: 2px solid rgb(77, 97, 185);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.win-hum {
+  position: relative;
+  top: -50%;
+  left: 60%;
+  display: flex;
+  gap: 20px;
+}
+
+.hum {
+  border: 2px solid  rgb(228, 98, 11);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.win {
+  border: 2px solid rgb(228, 98, 11);
+  padding: 20px;
+  border-radius: 10px;
+}
